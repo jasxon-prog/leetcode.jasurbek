@@ -24,3 +24,12 @@ nums = str(int(''.join(str(i) for i in digits)) + 1)
 x = lambda i: int(i)
 result = list(map(x, nums))
 print(result)
+
+# 125 - misol
+import re
+s = "A man, a plan, a canal: Panama"
+a = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
+if a == a[::-1]:
+    print(True)
+else: 
+    print(False) 
