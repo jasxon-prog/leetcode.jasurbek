@@ -12,7 +12,15 @@ def strStr(haystack: str, needle: str) -> int:
         if haystack[i:i+l1] == needle:
             return i
     return -1
+    
 
 haystack = 'sadbutsad'
 needle = ''
 print(strStr(haystack, needle))
+
+# 66 - misol
+digits = [1,2,3]
+nums = str(int(''.join(str(i) for i in digits)) + 1)
+x = lambda i: int(i)
+result = list(map(x, nums))
+print(result)
