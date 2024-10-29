@@ -39,3 +39,16 @@ a = '11'
 b = '1'
 summa = int(a, 2) + int(b, 2)
 print(bin(summa)[2:])
+
+# 20 - misol
+s = '() [] {}'
+while True:
+    if '()' in s:
+        s =  s.replace('()', '')
+    elif '[]' in s:
+        s = s.replace('[]', '')
+    elif '{}' in s:
+        s = s.replace('{}', '')
+    else:
+        print(not s)
+        break
