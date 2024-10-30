@@ -54,7 +54,7 @@ while True:
         break
 
 # 14 - misol
-strs = ["flower", "flow", "fel"]
+strs = ["flower", "flow", "flight"]
 def prefix(strs):
     if not strs:
         return ''
