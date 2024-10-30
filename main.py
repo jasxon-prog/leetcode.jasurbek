@@ -34,13 +34,13 @@ if a == a[::-1]:
 else: 
     print(False) 
 
-# 67 - misol
+# # 67 - misol
 a = '11'
 b = '1'
 summa = int(a, 2) + int(b, 2)
 print(bin(summa)[2:])
 
-# 20 - misol
+ # 20 - misol
 s = '() [] {}'
 while True:
     if '()' in s:
@@ -52,3 +52,20 @@ while True:
     else:
         print(not s)
         break
+
+# 14 - misol
+strs = ["flower", "flow", "fel"]
+def prefix(strs):
+    if not strs:
+        return ''
+
+    result = ''
+    min_strs = min(strs, key=len)
+
+    for i in range(len(min_strs)):
+        for j in strs:
+            if j[i] != min_strs[i]:
+                return result
+        result += min_strs[i]
+    return result
+print(prefix(strs))
