@@ -1,4 +1,3 @@
-
 def rome_integer(roman_number: str) ->int:
     r_a = {
     'I': 1,
@@ -20,6 +19,3 @@ def rome_integer(roman_number: str) ->int:
 
 roman_numbers = 'IX'
 print(rome_integer(roman_numbers))
-
-
-
