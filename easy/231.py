@@ -10,4 +10,3 @@ def power_two(n):
     else:
         return False
 print(power_two(16))
-
