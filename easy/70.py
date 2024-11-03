@@ -1,4 +1,3 @@
-n = 4
 def clim_stair(n: int) -> int:
     if n == 1:
         return 1
@@ -11,5 +10,5 @@ def clim_stair(n: int) -> int:
         step1 = step + step1
         step = result
     return step1
+n = 4
 print(clim_stair(n))
-        
