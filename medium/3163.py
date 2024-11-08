@@ -2,7 +2,7 @@ def str_sum(word: str):
     result = ""
     count = 1
     if len(word) ==1:
-        return 
+        return f'{count}{word}'
     for i in range(1,len(word)):
         if word[i-1]==word[i] and count !=9:
             count+=1
